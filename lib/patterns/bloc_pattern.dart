@@ -87,7 +87,7 @@ class CounterBloc {
   //Controller for State
   final _stateController = StreamController<int>();
   //State stream's Sink to add states into
-  StreamSink<int> get _stateSink => _stateController.sink;
+  StreamSink<int> get stateSink => _stateController.sink;
 
   //#5: StateController's stream is providing the updated state(s)
   //Stream of states. public
@@ -117,7 +117,7 @@ class CounterBloc {
 
     //#4: Adding newly formed state is added into State controller's sink
     //update the _counter value into stateController's sink (_stateSink)
-    _stateSink.add(_counter);
+    stateSink.add(_counter);
   }
 
   //close stream controllers to stop memory leak
