@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:syntax_highlighter/syntax_highlighter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import './screen_args.dart';
+import 'screen_args.dart';
 
 class CodeFileWidget extends StatefulWidget {
   final String recipeName;
@@ -26,19 +26,8 @@ class CodeFileWidget extends StatefulWidget {
 class CodeFileWidgetState extends State<CodeFileWidget> {
   double scaleFactorText = 1.0;
 
-  Future<String> l() async {
-    try {
-      String contents = await rootBundle.loadString(widget.codeFilePath);
-
-      return contents;
-    } catch (e) {
-      return 'oops $e';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    l();
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -49,7 +38,7 @@ class CodeFileWidgetState extends State<CodeFileWidget> {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.open_in_new),
-            onPressed: () => _launchURL(this.widget.codeGithubPath),
+            onPressed: () => launch(this.widget.codeGithubPath),
           )
         ],
       ),
@@ -76,14 +65,6 @@ class CodeFileWidgetState extends State<CodeFileWidget> {
         },
       ),
     );
-  }
-
-  _launchURL(final String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
   }
 
   List<Widget> codepreviewActions() {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'router.dart' as router;
+import 'tools/router.dart' as router;
 
 void main() => runApp(new MyApp());
 
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Widgets',
+
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
