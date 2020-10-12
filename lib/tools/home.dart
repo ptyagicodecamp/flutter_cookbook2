@@ -13,7 +13,8 @@ final List<RecipeWidget> recipes = [
         description: "Default Counter App using BloC Pattern",
         pageName: router.BLOC_PATTERN,
         codeFilePath: "lib/patterns/bloc_pattern.dart",
-        codeGithubPath: "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/patterns/bloc_pattern.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/patterns/bloc_pattern.dart",
         children: [],
       ),
       RecipeWidget(
@@ -21,23 +22,49 @@ final List<RecipeWidget> recipes = [
         description: "Default Counter App using BloC Library",
         pageName: router.BLOC_LIB,
         codeFilePath: "lib/patterns/flutter_bloc.dart",
-        codeGithubPath: "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/patterns/flutter_bloc.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/patterns/flutter_bloc.dart",
         children: [],
       ),
     ],
   ),
   RecipeWidget(
     title: "Responsive Widgets",
-    description:
-        "Widgets helpful in creating responsive layouts.",
+    description: "Widgets helpful in creating responsive layouts.",
     children: [
       RecipeWidget(
         title: "FittedBox",
         description:
-        "FittedBox fits it child with in the given space during layout to avoid overflows.",
+            "FittedBox fits it child with in the given space during layout to avoid overflows.",
         pageName: router.FITTED_BOX,
-        codeFilePath: "lib/responsive_widgets/fitted_box.dart",
-        codeGithubPath: "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/responsive_widgets/fitted_box.dart#L80:L84",
+        codeFilePath: "lib/responsive_widgets/progress_indicator_loading.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/responsive_widgets/progress_indicator_loading.dart#L80:L84",
+        children: [],
+      ),
+    ],
+  ),
+  RecipeWidget(
+    title: "Widgets",
+    description: "",
+    pageName: router.WIDGETS,
+    codeFilePath: "",
+    codeGithubPath: "",
+    children: [
+      RecipeWidget(
+        title: "Custom LinearProgressIndicator",
+        description: "Customized linear progress bar",
+        pageName: router.CUSTOM_LINEAR_PROGRESS_BAR,
+        codeFilePath: "lib/widgets/custom_linearprogress_indicator.dart",
+        codeGithubPath: "",
+        children: [],
+      ),
+      RecipeWidget(
+        title: "Animated LinearProgressIndicator",
+        description: "Animated linear progress bar (Continuous)",
+        pageName: router.ANIM_LINEAR_PROGRESS_BAR,
+        codeFilePath: "lib/widgets/anim_linearprogress_indicator.dart",
+        codeGithubPath: "",
         children: [],
       ),
     ],
