@@ -42,6 +42,55 @@ final List<RecipeWidget> recipes = [
             "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/responsive_widgets/progress_indicator_loading.dart#L80:L84",
         children: [],
       ),
+      RecipeWidget(
+        title: "Expanded",
+        description:
+            "Expanded widget allows child of Row, Column, or Flex widgets expand to fill the available space along the main axis of parent widget.",
+        pageName: router.EXPANDED,
+        codeFilePath: "lib/chapter10/layouts/expanded.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/pragmatic_flutter/blob/master/lib/chapter10/layouts/expanded.dart",
+        children: [],
+      ),
+      RecipeWidget(
+        title: "Flexible",
+        description:
+            "Expanded widget allows child of Row, Column, or Flex widgets expand to fill the available space along the main axis of parent widget.",
+        pageName: router.FLEXIBLE,
+        codeFilePath: "lib/chapter10/layouts/flexible.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/pragmatic_flutter/blob/master/lib/chapter10/layouts/flexible.dart",
+        children: [],
+      ),
+      RecipeWidget(
+        title: "FractionallySizedBox",
+        description: "Sizes its child to a fraction of total available space.",
+        pageName: router.FRACTIONALLY_SIZED_BOX,
+        codeFilePath: "lib/chapter10/layouts/fractionally_sized_box.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/pragmatic_flutter/blob/master/lib/chapter10/layouts/fractionally_sized_box.dart",
+        children: [],
+      ),
+      RecipeWidget(
+        title: "LayoutBuilder",
+        description:
+            "LayoutBuilder builds widgets dynamically as per the constraint passed by the parent.",
+        pageName: router.LAYOUT_BUILDER,
+        codeFilePath: "lib/chapter10/layouts/layoutbuilder.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/pragmatic_flutter/blob/master/lib/chapter10/layouts/layoutbuilder.dart",
+        children: [],
+      ),
+      RecipeWidget(
+        title: "Wrap",
+        description:
+            "Wrap widget is helpful when Row and Column widgets run out of room.",
+        pageName: router.WRAP,
+        codeFilePath: "lib/chapter10/layouts/wrap.dart",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/pragmatic_flutter/blob/master/lib/chapter10/layouts/wrap.dart",
+        children: [],
+      ),
     ],
   ),
   RecipeWidget(
@@ -56,7 +105,8 @@ final List<RecipeWidget> recipes = [
         description: "Customized linear progress bar",
         pageName: router.CUSTOM_LINEAR_PROGRESS_BAR,
         codeFilePath: "lib/widgets/custom_linearprogress_indicator.dart",
-        codeGithubPath: "",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/widgets/custom_linearprogress_indicator.dart",
         children: [],
       ),
       RecipeWidget(
@@ -64,7 +114,8 @@ final List<RecipeWidget> recipes = [
         description: "Animated linear progress bar (Continuous)",
         pageName: router.ANIM_LINEAR_PROGRESS_BAR,
         codeFilePath: "lib/widgets/anim_linearprogress_indicator.dart",
-        codeGithubPath: "",
+        codeGithubPath:
+            "https://github.com/ptyagicodecamp/flutter_cookbook2/blob/master/lib/widgets/anim_linearprogress_indicator.dart",
         children: [],
       ),
     ],

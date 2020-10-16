@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook2/responsive_widgets/expanded.dart';
 import 'package:flutter_cookbook2/responsive_widgets/fitted_box.dart';
+import 'package:flutter_cookbook2/responsive_widgets/flexible.dart';
+import 'package:flutter_cookbook2/responsive_widgets/fractionally_sized_box.dart';
+import 'package:flutter_cookbook2/responsive_widgets/layoutbuilder.dart';
+import 'package:flutter_cookbook2/responsive_widgets/wrap.dart';
 import 'package:flutter_cookbook2/widgets/anim_linearprogress_indicator.dart';
 import 'package:flutter_cookbook2/widgets/custom_linearprogress_indicator.dart';
 
@@ -16,6 +21,11 @@ const String SHOW_CODE_FILE = 'SHOW_CODE_FILE';
 const String BLOC_PATTERN = 'BLOC_PATTERN';
 const String BLOC_LIB = 'BLOC_LIB';
 const FITTED_BOX = 'FITTED_BOX';
+const EXPANDED = 'EXPANDED';
+const FLEXIBLE = 'FLEXIBLE';
+const FRACTIONALLY_SIZED_BOX = 'FRACTIONALLY_SIZED_BOX';
+const LAYOUT_BUILDER = 'LAYOUT_BUILDER';
+const WRAP = 'WRAP';
 const String WIDGETS = 'WIDGETS';
 const String CUSTOM_LINEAR_PROGRESS_BAR = 'CUSTOM_LINEAR_PROG_BAR';
 const String ANIM_LINEAR_PROGRESS_BAR = 'ANIM_LINEAR_PROG_BAR';
@@ -37,8 +47,28 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
           builder: (context) => AnimatedLinearProgressIndicatorDemo());
       break;
 
+    case EXPANDED:
+      return MaterialPageRoute(builder: (context) => ExpandedDemo());
+      break;
+
+    case FLEXIBLE:
+      return MaterialPageRoute(builder: (context) => FlexibleDemo());
+      break;
+
     case FITTED_BOX:
       return MaterialPageRoute(builder: (context) => FittedBoxDemo());
+      break;
+
+    case FRACTIONALLY_SIZED_BOX:
+      return MaterialPageRoute(
+          builder: (context) => FractionallySizedBoxDemo());
+      break;
+
+    case LAYOUT_BUILDER:
+      return MaterialPageRoute(builder: (context) => LayoutBuilderDemo());
+      break;
+    case WRAP:
+      return MaterialPageRoute(builder: (context) => WrapDemo());
       break;
 
     case BLOC_PATTERN:
