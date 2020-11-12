@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cookbook2/responsive_widgets/expanded.dart';
-import 'package:flutter_cookbook2/responsive_widgets/fitted_box.dart';
-import 'package:flutter_cookbook2/responsive_widgets/flexible.dart';
-import 'package:flutter_cookbook2/responsive_widgets/fractionally_sized_box.dart';
-import 'package:flutter_cookbook2/responsive_widgets/layoutbuilder.dart';
-import 'package:flutter_cookbook2/responsive_widgets/wrap.dart';
-import 'package:flutter_cookbook2/widgets/anim_linearprogress_indicator.dart';
-import 'package:flutter_cookbook2/widgets/custom_linearprogress_indicator.dart';
 
+import '../indicators/anim_linearprogress_indicator.dart';
+import '../indicators/custom_linearprogress_indicator.dart';
 import '../patterns/bloc_pattern.dart';
 import '../patterns/flutter_bloc.dart';
+import '../responsive_widgets/expanded.dart';
+import '../responsive_widgets/fitted_box.dart';
+import '../responsive_widgets/flexible.dart';
+import '../responsive_widgets/fractionally_sized_box.dart';
+import '../responsive_widgets/layoutbuilder.dart';
+import '../responsive_widgets/wrap.dart';
 import 'codefile.dart';
 import 'home.dart';
 import 'screen_args.dart';
